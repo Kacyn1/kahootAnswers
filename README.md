@@ -4,9 +4,10 @@ Aplikacja desktopowa: wklejasz link do publicznego quizu Kahoot i widzisz popraw
 
 ## Uruchomienie
 
-Wymaga Pythona 3.10+ z Tkinterem. Nie ma zewnętrznych zależności.
+Wymaga Pythona 3.10+ z Tkinterem.
 
 ```
+pip install -r requirements.txt
 python kahoot_answers.py
 ```
 
@@ -27,5 +28,7 @@ python -m unittest
 
 - Działa tylko z quizami publicznymi.
 - Potrzebny jest link do quizu (`create.kahoot.it/details/...`), a nie kod PIN gry.
-- W pytaniach „zaznacz na obrazku” aplikacja nie wskazuje miejsca, tylko podaje link do obrazka.
+- W pytaniach „zaznacz na obrazku” aplikacja pokazuje obrazek, ale nie zaznacza poprawnego miejsca.
+- Wzory są zamieniane na zwykły tekst (np. `ŷ = β₀ + β₁x`), więc bardzo złożone zapisy mogą wyglądać niedoskonale.
+- Odpowiedzi pochodzą od autora quizu i mogą zawierać błędy.
 - Korzysta z nieoficjalnego API Kahoota, które może się zmienić.
